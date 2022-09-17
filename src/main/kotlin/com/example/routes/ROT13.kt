@@ -1,12 +1,12 @@
-package com.example.routes;
+package com.example.routes
 
-import io.ktor.http.*
 import com.example.utils.*
+import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*;
+import io.ktor.server.routing.*
 
-fun Route.ROT13() {
+fun Route.rot13Encryption() {
 	route("/rot13") {
 		get("/{text?}") {
 			val text = call.parameters["text"]
@@ -18,4 +18,3 @@ fun Route.ROT13() {
 		}
 	}
 }
-
