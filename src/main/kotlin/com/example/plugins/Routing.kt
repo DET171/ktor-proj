@@ -15,8 +15,10 @@ fun Application.configureRouting() {
 				Available routes:
 				- GET /rot13/{text}
 				  Encodes the received text using ROT13
-				- GET /com.example.utils.sha256/{text}
+				- GET /sha256/{text}
 				  Hashes the given text with SHA-256
+				- GET /md5/{text}
+				  Hashes the given text with MD5
 				""".trimIndent()
 			)
 		}
